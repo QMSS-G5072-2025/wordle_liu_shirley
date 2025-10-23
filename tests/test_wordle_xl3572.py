@@ -1,0 +1,1 @@
+from wordle_xl3572 import wordle_xl3572
