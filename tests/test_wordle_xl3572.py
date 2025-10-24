@@ -1,8 +1,5 @@
-from wordle_xl3572.wordle_xl3572 import (validate_guess, check_guess)
-
-
+from wordle_xl3572.wordle_xl3572 import validate_guess, check_guess
 import pytest
-
 
 # Word list for testing
 WORD_LIST = [
