@@ -1,6 +1,6 @@
 [project]
 name = "wordle-xl3572"
-version = "1.2.3"
+version = "1.2.4"
 description = ""
 authors = [
     {name = "xuanlin-liu",email = "shirley.liu940@gmail.com"}
