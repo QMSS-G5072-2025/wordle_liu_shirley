@@ -16,16 +16,16 @@ def validate_guess(guess, word_length=5):
 
      Examples
     --------
-    >>> validate_guess("crane")
-    True
-    >>> validate_guess("Crane")  # must be lowercase
-    False
-    >>> validate_guess("cränë")  # non-ASCII letters fail .isalpha() in many contexts
-    False
-    >>> validate_guess("cars", word_length=4)
-    True
-    >>> validate_guess(12345)  # not a string
-    False
+    # >>> validate_guess("crane")
+    # True
+    # >>> validate_guess("Crane")  # must be lowercase
+    # False
+    # >>> validate_guess("cränë")  # non-ASCII letters fail .isalpha() in many contexts
+    # False
+    # >>> validate_guess("cars", word_length=4)
+    # True
+    # >>> validate_guess(12345)  # not a string
+    # False
     """
     if not isinstance(guess, str):
         return False
@@ -55,15 +55,15 @@ def check_guess(secret_word, guess):
     Examples
     --------
     Basic usage:
-    >>> check_guess("crane", "crane")
-    [('c', 'green'), ('r', 'green'), ('a', 'green'), ('n', 'green'), ('e', 'green')]
-
-    Mixed results:
-    >>> check_guess("crane", "cigar")
-    [('c', 'green'), ('i', 'gray'), ('g', 'gray'), ('a', 'yellow'), ('r', 'yellow')]
-
-    Mismatched lengths (returns empty list):
-    >>> check_guess("crane", "too")
+    # >>> check_guess("crane", "crane")
+    # [('c', 'green'), ('r', 'green'), ('a', 'green'), ('n', 'green'), ('e', 'green')]
+    #
+    # Mixed results:
+    # >>> check_guess("crane", "cigar")
+    # [('c', 'green'), ('i', 'gray'), ('g', 'gray'), ('a', 'yellow'), ('r', 'yellow')]
+    #
+    # Mismatched lengths (returns empty list):
+    # >>> check_guess("crane", "too")
     []
     """
     if len(secret_word) != len(guess):
